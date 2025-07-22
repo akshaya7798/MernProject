@@ -6,7 +6,7 @@ import { assets } from '../../assets/assets';
 
 const Orders = () => {
   const [orders, setOrders] = useState([]);
-  const url = "http://localhost:4000";
+  const url = "https://juice-app-backend.onrender.com";
 
   const fetchOrders = async () => {
     try {
