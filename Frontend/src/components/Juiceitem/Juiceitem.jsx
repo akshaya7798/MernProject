@@ -4,7 +4,7 @@ import { assets } from '../../assets/assets'
 import { Store } from '../../context/Store'
 
 const Juiceitem = ({ id, name, price, description, image }) => {
-    const url = "https://juice-app-backend.onrender.com/";
+    const url = "https://juice-app-backend.onrender.com";
     const { cartItems, addToCart, removeFromCart } = useContext(Store)
 
     return (
