@@ -6,7 +6,7 @@
 display: grid;
 grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
 align-items: center;
-color: grey;
+color: beige;
 font-size: max(1vw,12px);
 }
 .cart-items-item{
@@ -50,7 +50,7 @@ font-size: max(1vw,12px);
 .cart-total button{
     border: none;
     color: aliceblue;
-    background-color: pink;
+    background-color: black;
     width: max(15vw,200px);
     padding: 12px 0px;
     border-radius: 4px;
