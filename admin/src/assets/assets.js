@@ -4,7 +4,7 @@ import logo from './logo.png'
 import parcel from './parcel.png'
 import order from './order.png'
 import profile from './profile.png'
-
+export const url="https://juice-app-backend.onrender.com"
 export const assets={
     logo,
     upload_area,
