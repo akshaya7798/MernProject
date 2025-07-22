@@ -7,7 +7,7 @@ const Verify = () => {
     const [searchParams,setSearchParams]=useSearchParams();
     const success =searchParams.get("success")
     const orderId =searchParams.get("orderId")
-   const url="http://localhost:4000";
+   const url="https://juice-app-backend.onrender.com";
    const navi =useNavigate();
     const verifyPay= async () =>{
         const response=await axios.post(url+"/api/order/verify",{success,orderId})
