@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const LoginPopup = ({ setShowLogin }) => {
   const { setToken } = useContext(Store);
-  const url = "http://localhost:4000";
+  const url = "https://juice-app-backend.onrender.com";
   const [currentState, setCurrentState] = useState("Login");
   const [data, setData] = useState({
     name: "",
