@@ -8,7 +8,7 @@ const StoreProvider =(props)=>{
 
 
     const [cartItems,setCartItems]=useState({});
-    const url="http://localhost:4000"
+    const url="https://juice-app-backend.onrender.com"
     const [token,setToken]=useState("")
     const [juice_list,setJuiceList]=useState([])
 
