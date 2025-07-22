@@ -5,7 +5,7 @@ import axios from 'axios';
 import { Store } from '../../context/Store';
 
 const MyOrders = () => {
-  const url = "http://localhost:4000";
+  const url = "https://juice-app-backend.onrender.com";
   const { token } = useContext(Store);
   const [data, setData] = useState([]);
 
