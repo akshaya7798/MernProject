@@ -3,7 +3,7 @@ import './Cart.css'
 import { Store } from '../../context/Store'
 import { useNavigate } from 'react-router-dom';
 const Cart = () => {
-  const url="http://localhost:4000"
+  const url="https://juice-app-backend.onrender.com"
   const {cartItems,juice_list,removeFromCart,getTotAmt}=useContext(Store);
   const navi =useNavigate();
   return (
