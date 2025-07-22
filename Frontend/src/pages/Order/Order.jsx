@@ -5,7 +5,7 @@ import  {useNavigate} from 'react-router-dom'
 import './Order.css'
 import { Store } from '../../context/Store'
 const Order = () => {
-   const url = "http://localhost:4000";
+   const url = "https://juice-app-backend.onrender.com";
   const {getTotAmt,token,juice_list,cartItems}=useContext(Store);
   const [data,setData]=useState({
     firstName:"",
