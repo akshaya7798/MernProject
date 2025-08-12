@@ -7,7 +7,7 @@ const placeOrder = async (req, res) => {
     console.log("📦 /api/order/place route hit");
   console.log("👉 Received token:", req.headers.token);
   console.log("📝 Request Body:", req.body);
-const frontend_url = "http://localhost:5174";
+const frontend_url = "https://juice-app-frontend.onrender.com/";
 try {
   const newOrder = new orderModel({ 
     userId:req.body.userId,
@@ -35,8 +35,8 @@ try {
                      const session = await stripe.checkout.sessions.create({
                          line_items: line_items,
                           mode: "payment", 
-                          success_url: `http://localhost:5174/verify?success=true&orderId=${newOrder._id}`,
-                           cancel_url:`http://localhost:5174/verify?success=false&orderId=${newOrder._id}` });
+                          success_url: `https://juice-app-frontend.onrender.com/verify?success=true&orderId=${newOrder._id}`,
+                           cancel_url:`https://juice-app-frontend.onrender.com/verify?success=false&orderId=${newOrder._id}` });
                            console.log("Stripe session:", session.url);
 
                             res.json({ success: true, session_url: session.url }); 
